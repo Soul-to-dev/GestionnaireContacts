@@ -1,12 +1,9 @@
-// Classe principale : c'est ici que le programme démarre
 public class Main {
 
     public static void main(String[] args) {
 
-        // On crée notre gestionnaire de contacts
         ContactsManager myContactsManager = new ContactsManager();
 
-        // On crée 5 contacts et on les ajoute
         Contact contact1 = new Contact("Alice Dupont", "0701020304");
         myContactsManager.addContact(contact1);
 
@@ -24,12 +21,10 @@ public class Main {
 
         System.out.println("----------------------------");
 
-        // On recherche un contact par son nom
         myContactsManager.searchContact("Clara Diallo");
 
         System.out.println("----------------------------");
 
-        // On teste avec un nom qui n'existe pas
         myContactsManager.searchContact("Jean Inconnu");
     }
 }
